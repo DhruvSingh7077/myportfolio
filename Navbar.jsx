@@ -86,8 +86,9 @@ useEffect(() => {
         </div>
         {/* Mobile menu Items */}
         { isOpen && (
-            <div className="absolute top-16 left-1/2 transform- translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg">
-                <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
+           
+            <div className="absolute top-16 left-1/2 -translate-x-1/2 w-4/5 bg-gray-800/60 backdrop-blur-md z-50 rounded-xl shadow-lg">
+  <ul className="flex flex-col items-center space-y-4 py-6 text-gray-300">
             {menuItems.map((item)=> (
                 <li key={item.id} className={`cursor-pointer hover:text-white
                     ${activeSection === item.id ? " text-[#8245ec]": ""
@@ -102,7 +103,7 @@ useEffect(() => {
          </div>
         )}
     </nav>
-  )
+  );
 }
 
 export default Navbar
