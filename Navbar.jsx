@@ -19,7 +19,13 @@ useEffect(() => {
     //Smooth scroll function
     const handleMenuItemClick = (sectionId) => {
         setActiveSection(sectionId);
-    }
+        setIsOpen(false);
+
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({behavior: "smooth"});
+        }
+    };
     const menuItems = [
         {id:"about", label:"About"},
         {id:"skills", label:"Skills"},
@@ -94,7 +100,7 @@ useEffect(() => {
                     ${activeSection === item.id ? " text-[#8245ec]": ""
 
                     }`}>
-                        <button onClick={() => handleMenuItemClick}>
+                        <button onClick={() => handleMenuItemClick(item.id)}>
                             {item.label}
                         </button>
                         </li>
