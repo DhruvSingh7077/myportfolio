@@ -63,14 +63,7 @@ const Experience = () => {
             </ul>
             </div>    <p className="mt-4 text-gray-400 font-bold">Grade:{edu.grade}</p>
              <p className="mt-4 text-gray-400">{edu.desc}</p>
-           {/* remove this part */}
-            className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:texxt-sm rounded-lg mr-2 mb-2  border border-gray-400"
-                >{skill}</li>
-              ))}
-            </ul>
-            </div>    <p className="mt-4 text-gray-400 font-bold">Grade:{edu.grade}</p>
-             <p className="mt-4 text-gray-400">{edu.desc}</p>
-      {/* upto this */}
+           
           
            
           </div>
