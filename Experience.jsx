@@ -54,12 +54,7 @@ const Experience = () => {
           <div className="mt-4">
             <h5 className="font-medium text-white">Skills:</h5>
             <ul className=' '>
-              {/*remove this part */}
-               <p className="mt-4 text-gray-400">{experience.desc}</p>
-          <div className="mt-4">
-            <h5 className="font-medium text-white">Skills:</h5>
-            <ul className=' '>  
-              {/*till here */}
+             
               {experience.skills.map((skill, index) => (
                 <li 
                 key={index}
